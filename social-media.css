@@ -1,0 +1,29 @@
+.social-media__icon {
+  display: inline-block;
+  padding: 10px 11px;
+  border: solid white 1px;
+  border-radius: 50%;
+  background-color: transparent;
+  margin-right: 20px;
+  transition: background-color .3s ease;
+}
+.social-media__icon:last-child {
+  margin-right: 0px;
+}
+
+.social-media__icon svg {
+  width: 16px;
+  height: 16px;
+  stroke-width: 1px;
+  stroke:  #818a91;
+  fill:  #818a91;
+  transition: fill .3s ease;
+}
+.social-media__icon:hover {
+  background-color: #32baa6;
+  cursor: pointer;
+}
+.social-media__icon:hover svg {
+  stroke:  white;
+  fill: white;
+}

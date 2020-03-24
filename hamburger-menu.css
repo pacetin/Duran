@@ -1,0 +1,105 @@
+.menu-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+} 
+
+.hidden-button {
+  display: none;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: -270px;
+  z-index: 2;
+  list-style:none;
+  padding: 20px;
+  margin: 0;
+  width: 270px;
+  height: 80vh;
+  background-color: #fff;
+  transition: left 0.4s ease;
+}
+
+.menu > li > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu > li {
+  list-style: none;
+  color: #191b32;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: 1.5em;
+  letter-spacing: 1.2px;
+  margin-bottom: 15px;
+}
+
+.menu > li > a:hover {
+  color:#32baa6;
+}
+
+.menu > li:first-child {
+  color:#32baa6;
+}
+
+.menu-button {
+  background-color: #fff;
+  padding: 7px;
+  position: absolute;
+  top: 150px;
+  left: 15px;
+  cursor: pointer;
+  transition: left .23s;
+  z-index: 3;
+  width: 32px;
+}
+
+.menu-button:hover > span {
+  background-color: #32baa6;
+}
+
+.menu-button span {
+  display: block;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #919191;
+  margin: 3px 0 0;
+  transition: all .1s linear .23s;
+  position: relative;
+}
+
+.menu-button span.first {
+  margin-top: 0;
+}
+
+.hidden-button:checked ~ .menu-button {
+  left: 235px;
+  top: 0px;
+  background-color: #fff;
+}
+
+.hidden-button:checked ~ .menu {
+  left: 0;
+}
+.hidden-button:checked ~ .menu-button span.first {
+  transform: rotate(45deg);
+  top: 6px;
+  background-color: #919191;
+}
+
+.hidden-button:checked ~ .menu-button span.second {
+  opacity: 0;
+}
+
+.hidden-button:checked ~ .menu-button span.third {
+  transform: rotate(-45deg);
+  top: -6px;
+  background-color: #919191;
+}
