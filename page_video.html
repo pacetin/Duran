@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+  <title>Видео</title>
+  <link rel="icon" href="/images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"/>  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="page_video.css" type="text/css"/>
+  <link rel="stylesheet" href="header.css" type="text/css"/>
+  <link rel="stylesheet" href="footer.css" type="text/css"/>
+  <link rel="stylesheet" href="hamburger-menu.css">
+  <link rel="stylesheet" href="breadcrumb.css">
+  <link rel="stylesheet" href="social-media.css" type="text/css"/>
+  <link rel="stylesheet" href="max1024_layout.css" type="text/css"/>
+  <link rel="stylesheet" href="max767_layout.css" type="text/css"/>
+  <link rel="stylesheet" href="max414_layout.css" type="text/css"/>
+  <script src="script.js"></script>   
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper header__wrapper">
+      <a id="toTop"></a>
+      <div class="layout-flex header__layout-flex">
+        <h1 class="header__title">Все о Турции</h1>
+        <div class="social-media header__social-media">
+          <div class="social-media__icon">
+            <a href="https://www.facebook.com/tatyana.smirnova.1800" target="_blank">         
+              <svg>
+                <use xlink:href="sprite.svg#facebook"></use>
+              </svg>
+            </a>    
+          </div>
+          <div class="social-media__icon">
+            <a href="https://www.instagram.com/tanika_duran" target="_blank">         
+              <svg>
+                <use xlink:href="sprite.svg#instagram"></use>
+              </svg>
+            </a>   
+          </div>
+          <div class="social-media__icon">
+            <a href="https://vk.com/id2770897" target="_blank">         
+              <svg>
+                <use xlink:href="sprite.svg#vkontakte"></use>
+              </svg>
+            </a>   
+          </div>
+          <div class="social-media__icon">
+            <a href="https://www.youtube.com/channel/UCR0GTugHusGOOcX2rDH4jpA" target="_blank">         
+              <svg>
+                <use xlink:href="sprite.svg#youtube"></use>
+              </svg>
+            </a>  
+          </div>          
+        </div>
+      </div>
+
+      <!--         Лого, панель навигации, поиск       -->
+
+      <div class="layout-flex header__layout-flex">
+        <div class="logo-navigation-container">
+          <div class="logo header_logo">
+            <img class="logo-image" src="images/logo.gif" alt="Логотип компании">
+          </div>
+          <nav class="navigation">
+            <ul class="navigation-bar">
+              <li class="navigation-bar__item"><a href="home.html" target="_blank">Домашняя</a></li>
+              <li class="navigation-bar__item navigation-bar__item--colored"><a href="page_video.html">Видео</a></li>
+              <li class="navigation-bar__item"><a href="page_transfer.html" target="_blank">Трансфер</a></li>
+              <li class="navigation-bar__item"><a href="#" target="_blank">Недвижимость</a></li>
+              <li class="navigation-bar__item"><a href="page_leather.html" target="_blank">Кожа</a></li>
+              <li class="navigation-bar__item"><a href="contacts.html" target="_blank">Мои контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="menu-wrap">
+          <input type="checkbox" id="hmt" class="hidden-button">
+          <label class="menu-button" for="hmt">
+            <span class="first"></span>
+            <span class="second"></span>
+            <span class="third"></span>
+          </label>
+          <ul class="menu">
+            <li><a href="home.html" target="_blank">Домашняя</a></li>  
+            <li><a class="menu__item--colored" href="page_video.html">Видео</a></li>
+            <li><a href="page_transfer.html" target="_blank">Трансфер</a></li>
+            <li><a href="#" target="_blank">Недвижимость</a></li>
+            <li><a href="page_leather.html" target="_blank">Кожа</a></li>
+            <li><a href="contacts.html" target="_blank">Мои контакты</a></li>    
+          </ul>
+        </div>     
+        <div class="search">
+          <button type="button" class="search-button search-button--trigger" onclick="openSearch()">
+            <svg class="icon search__icon">
+              <use xlink:href="sprite.svg#search"></use>
+            </svg>
+          </button>          
+          <div class="search__popup-container"  id="popUp">          
+            <form class="search__form" action="php" method="get">
+              <input type="search" id="searchField" class="search-field" placeholder="Введите ключевое слово" />
+              <button type="submit" class="search-button search-button--submit">
+                <svg class="icon search__icon">              
+                  <use xlink:href="sprite.svg#search"></use>            
+                </svg>
+              </button>
+            </form>  
+            <button  type="button" class="search-button search-button--close" onclick="closeSearch()">
+              <svg class="icon search__icon search__icon--size--small">              
+                <use xlink:href="sprite.svg#close-cross"></use>             
+              </svg>
+            </button>
+          </div>                    
+        </div>
+      </div>  
+    </div>    
+  </header>
+
+ <!--         Хлебные крошки, слайдер, форма заказа     -->
+
+ <main>   
+    <div class="wrapper breadcrumb">
+      <ul class="breadcrumb-list">
+        <li><a href="home.html" target="_blank">Домашняя</a></li>
+        <li></li>
+        <li>Видео</li>
+    </ul>
+    </div>
+
+    <section class="video">
+      <div class="wrapper video__wrapper">
+        <div class="layout-flex video__layout-flex">          
+          <h2 class="video__title">Самые актуальные видео с моего Уoutube-канала</h2>
+          <div class="video-block video-block--main">
+            <div class="video-block__video-container">
+              <iframe src="https://www.youtube.com/embed/FYOdKKsrJik" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-block__text-container">
+              <p class="video-block__date">Март, 2020</p>
+              <h4 class="video-block__title">
+                <a href="https://www.youtube.com/playlist?list=PLUv7JTUrMzihdhRC6nUl6TLfCXJfZMXb_" target="_blank">
+                Для самостоятельных путешествий</a>
+              </h4>
+            </div>
+          </div>
+          <div class="video-block">
+            <div class="video-block__video-container">
+              <iframe src="https://www.youtube.com/embed/mJSrF7nC5us"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-block__text-container">
+              <p class="video-block__date">Апрель, 2019</p>
+              <h4 class="video-block__title">
+                <a href="https://www.youtube.com/playlist?list=PLUv7JTUrMziibrV_sy3D3vMC5saQbn9jH" target="_blank">
+                Главная ИНФОРМАЦИЯ для отдыха в Турции</a>
+              </h4>
+            </div>
+          </div>
+          <div class="video-block">
+            <div class="video-block__video-container">
+              <iframe src="https://www.youtube.com/embed/u6bT2BSGn2o" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-block__text-container">
+              <p class="video-block__date">Май, 2019</p>
+              <h4 class="video-block__title">
+                <a href="https://www.youtube.com/playlist?list=PLUv7JTUrMziibrV_sy3D3vMC5saQbn9jH" target="_blank">
+                Главная ИНФОРМАЦИЯ для отдыха в Турции</a>
+              </h4>
+            </div>
+          </div>
+          <div class="video-block">
+            <div class="video-block__video-container">
+              <iframe src="https://www.youtube.com/embed/zZByfLalVO4" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-block__text-container">
+              <p class="video-block__date">Апрель, 2019</p>
+              <h4 class="video-block__title">
+                <a href="https://www.youtube.com/playlist?list=PLUv7JTUrMziibrV_sy3D3vMC5saQbn9jH" target="_blank">
+                Главная ИНФОРМАЦИЯ для отдыха в Турции</a>
+              </h4>
+            </div>
+          </div>
+          <div class="video-block invisible">
+            <div class="video-block__video-container">
+              <iframe src="https://www.youtube.com/embed/B6mp14_Npes" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-block__text-container">
+              <p class="video-block__date">Март, 2020</p>
+              <h4 class="video-block__title">
+                <a href="https://www.youtube.com/playlist?list=PLUv7JTUrMzihdhRC6nUl6TLfCXJfZMXb_" target="_blank">
+                Для самостоятельных путешествий</a>
+              </h4>
+            </div>
+          </div>
+          <div class="video-block invisible">
+            <div class="video-block__video-container">
+              <iframe src="https://www.youtube.com/embed/wzVaOB9DnCE" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-block__text-container">
+              <p class="video-block__date">Март, 2019</p>
+              <h4 class="video-block__title">
+                <a href="https://www.youtube.com/playlist?list=PLUv7JTUrMzihdhRC6nUl6TLfCXJfZMXb_" target="_blank">
+                Для самостоятельных путешествий</a>
+              </h4>
+            </div>
+          </div>
+          <div class="video-block invisible">
+            <div class="video-block__video-container">
+              <iframe src="https://www.youtube.com/embed/lDOeIqkIhzo" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-block__text-container">
+              <p class="video-block__date">Март, 2019</p>
+              <h4 class="video-block__title">
+                <a href="https://www.youtube.com/playlist?list=PLUv7JTUrMzihdhRC6nUl6TLfCXJfZMXb_" target="_blank">
+                Для самостоятельных путешествий</a>
+              </h4>
+            </div>
+          </div>
+          <div class="video-block invisible">
+            <div class="video-block__video-container">
+              <iframe src="https://www.youtube.com/embed/x5Y0Lj5mtn4" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-block__text-container">
+              <p class="video-block__date">Сентябрь, 2019</p>
+              <h4 class="video-block__title">
+                <a href="https://www.youtube.com/playlist?list=PLUv7JTUrMzijyQEivU97icYGJ-u5oQFQE" target="_blank">
+                Личный опыт и советы</a>
+              </h4>
+            </div>
+          </div>
+          <div class="video-block invisible">
+            <div class="video-block__video-container">
+              <iframe src="https://www.youtube.com/embed/VetiRmA56ns" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-block__text-container">
+              <p class="video-block__date">Июль, 2019</p>
+              <h4 class="video-block__title">
+                <a href="https://www.youtube.com/playlist?list=PLUv7JTUrMzijyQEivU97icYGJ-u5oQFQE" target="_blank">
+                Личный опыт и советы</a>
+              </h4>
+            </div>
+          </div>
+          <div class="video-block invisible">
+            <div class="video-block__video-container">
+              <iframe src="https://www.youtube.com/embed/-Ndsh8vHfBM" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-block__text-container">
+              <p class="video-block__date">Октябрь, 2019</p>
+              <h4 class="video-block__title">
+                <a href="https://www.youtube.com/playlist?list=PLUv7JTUrMzijyQEivU97icYGJ-u5oQFQE" target="_blank">
+                Личный опыт и советы</a>
+              </h4>
+            </div>
+          </div>
+          <div class="video-block invisible">
+            <div class="video-block__video-container">
+              <iframe src="https://www.youtube.com/embed/-kN04h2tYVA" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-block__text-container">
+              <p class="video-block__date">Февраль, 2020</p>
+              <h4 class="video-block__title">
+                <a href="https://www.youtube.com/playlist?list=PLUv7JTUrMzihwtI8AD4HP2ZAZIYItAHWB" target="_blank">
+                Шоппинг в Турции</a>
+              </h4>
+            </div>
+          </div>
+          <div class="video-block invisible">
+            <div class="video-block__video-container">
+              <iframe src="https://www.youtube.com/embed/KjWO0LeA8FM" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-block__text-container">
+              <p class="video-block__date">Август, 2019</p>
+              <h4 class="video-block__title">
+                <a href="https://www.youtube.com/playlist?list=PLUv7JTUrMziiZJBTnMfo2Lm6PYH39cYJW" target="_blank">
+                Отельные истории</a>
+              </h4>
+            </div>
+          </div>
+          <div class="video-block invisible">
+            <div class="video-block__video-container">
+              <iframe src="https://www.youtube.com/embed/8Yq8UnSfxL8" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-block__text-container">
+              <p class="video-block__date">Декабрь, 2019</p>
+              <h4 class="video-block__title">
+                <a href="https://www.youtube.com/playlist?list=PLUv7JTUrMzij096rr3jgCEJ6tMSK4zRqh" target="_blank">
+                Автоэкскурсии по окрестностям Анталии</a>
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div id="blocked" class="button-container">
+          <a class="button-item video__button-item" onclick="showMore()">показать еще</a>
+        </div>        
+      </div>
+    </section>
+    <script>
+      function showMore() {
+        var videos = document.getElementsByClassName("invisible");
+        var count = 3;
+        for (let item of videos) { 
+          if (getComputedStyle(item).display == "none" && count > 0) {
+            item.style.display = "block";
+            count--;
+          }  
+        }
+      }
+    </script>
+  </main>
+
+ <!--         Подвал, якорь      -->
+
+ <footer class="footer">
+    <div class="wrapper footer__wrapper">
+      <div class="layout-flex footer__layout-flex">
+        <div class="footer__about-me">
+          <h3 class="footer__title-item">обо мне</h3>
+          <p class="footer__text-item">Дорогие туристы и постоянные жители Турции, я очень рада приветствовать вас на моем сайте!<br>
+            Уже 12 лет как я работаю в сфере туризма и гостиничного бизнеса, была гидом, менеджером по
+            туризму, работала в офисе туроператора и в отеле. Поэтому очень хорошо понимаю, какие
+            вопросы у вас возникают на отдыхе и какая информация нужна. Здесь вы можете найти ссылки на
+            самые популярные мои видео с YouTube &mdash; канала, а также заказать трансфер, записаться на
+            консультацию по недвижимости в Анталии и забронировать выезд в магазин кожи. Я на связи с
+            вами в соцсетях и по почте.<br>
+            У вас есть вопрос &mdash; я помогу найти ответ. Отличного отдыха в
+            солнечной Турции!
+          </p>
+        </div>
+        <div class="footer__navigation">
+          <h3 class="footer__title-item footer__title-item--center">разделы</h3>
+          <ul class="footer__navigation-bar">
+            <li><a href="page_video.html">Видео</a></li>
+            <li><a href="page_transfer.html" target="_blank">Трансфер</a></li>
+            <li><a href="https//" target="_blank">Недвижимость</a></li>
+            <li><a href="page_leather.html" target="_blank">Кожа</a></li>
+            <li><a href="#" target="_blank">Статьи</a></li>
+            <li><a href="contacts.html" target="_blank">Мои контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer__form-element">
+          <h3 class="footer__title-item">есть вопрос?</h3>          
+          <a href="contacts.html#toForm" class="button-item footer__button-item" target="_blank">
+            <svg class="button-icon">
+              <use xlink:href="sprite.svg#paper-plane"></use>
+            </svg>
+          напиши мне</a>          
+          <h3 class="footer__title-item">следи за мной</h3>
+          <div class="social-media footer__social-media">
+            <div class="social-media__icon">
+              <a href="https://www.facebook.com/tatyana.smirnova.1800" target="_blank">         
+                <svg>
+                  <use xlink:href="sprite.svg#facebook"></use>
+                </svg>
+              </a>    
+            </div>
+            <div class="social-media__icon">
+              <a href="https://www.instagram.com/tanika_duran" target="_blank">         
+                <svg>
+                  <use xlink:href="sprite.svg#instagram"></use>
+                </svg>
+              </a>   
+            </div>
+            <div class="social-media__icon">
+              <a href="https://vk.com/id2770897" target="_blank">         
+                <svg>
+                  <use xlink:href="sprite.svg#vkontakte"></use>
+                </svg>
+              </a>   
+            </div>
+            <div class="social-media__icon">
+              <a href="https://www.youtube.com/channel/UCR0GTugHusGOOcX2rDH4jpA" target="_blank">         
+                <svg>
+                  <use xlink:href="sprite.svg#youtube"></use>
+                </svg>
+              </a>  
+            </div>          
+          </div>
+        </div>
+      </div>    
+      <div class="layout-flex footer__layout-2-columns">
+        <div class="splitter"></div>
+        <div class="logo footer__logo">
+          <img class="logo-image" src="images/logo.gif" alt="Логотип компании">
+        </div>
+        <div class="copyright">&#169; Татьяна Дуран, 2020. Любое использование либо копирование материалов или
+        подборки материалов сайта допускается лишь с разрешения правообладателя и только со ссылкой на источник.</div>
+      </div>
+    </div>
+    <div class="scroll-up">
+      <a href="#toTop">
+        <svg class="scroll-up__icon">
+          <use xlink:href="sprite.svg#chevron"></use>
+        </svg>
+      </a>
+    </div>
+  </footer>
+  <script src="svg4everybody.js"></script>
+  <script>svg4everybody();</script>
+</body>
+</html>

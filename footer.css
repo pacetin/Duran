@@ -1,6 +1,6 @@
-.footer__layout-flex {
+.footer__wrapper {
+  padding: 75px 35px 10px 35px;
   background-color: #f9f9f9;
-  padding: 76px 35px 0px 35px;
 }
 
 .footer__about-me {
@@ -24,6 +24,7 @@
   line-height: 2.16rem;
   letter-spacing: 0.4rem;
   color: var(--text-color);
+  color:#191b32;
 }
 
 .footer__title-item--center {
@@ -49,6 +50,7 @@
 
 .footer__navigation-bar > li {
   color: var(--text-color);
+  color:#191b32;
   font-size: 1.2rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -66,6 +68,7 @@
 
 .footer__navigation-bar > li:hover {
   color: var(--primary-color);
+  color:#32baa6;
 }
 
 .button-icon {
@@ -89,9 +92,13 @@
   letter-spacing: 0rem;
   color: #fff;
   background-color: var(--primary-color);
-  margin: 35px 0px 80px 0px;
-  padding: 7px 45px;
+  background-color:#32baa6;
+  padding: 7px 45px;  
   transition: all .3s ease;
+}
+
+.footer__button-item {
+  margin: 35px 0px 80px 0px;
 }
 
 .button-item:hover {
@@ -111,12 +118,11 @@
   flex: 1 1 90%;
   height: 1px;
   background-color: var(--icon-color);
-  margin: 0px 10px;
+  background-color: #919191;
+  margin: 0px 10px 10px;
 }
 
 .footer__layout-2-columns {
-  background-color: #f9f9f9;
-  padding: 0px 35px 10px 35px;
   align-items: center;
 }
 
@@ -136,9 +142,11 @@
  width: 24px;
  height: 24px;
  fill: var(--primary-color);
+ fill: #32baa6;
  transition: all 0.3s ease ;
 }
 
 .scroll-up__icon:hover {
   fill: var(--text-color);
+  fill: #191b32;
 }

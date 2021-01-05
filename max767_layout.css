@@ -1,0 +1,167 @@
+@media only all and (max-width: 767px)
+{
+  .header__title {
+    flex: 100% 0 0;
+  }
+
+  .header__social-media {
+    flex: 100% 0 0;
+    text-align: center;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .logo-navigation-container {   
+    justify-content: center;
+  }
+
+  .logo {
+    margin-top: 10px;
+  }
+
+  .container-2-columns--inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container-2-columns__element2 {
+    height: 750px;
+  }
+
+  .container-2-columns--inner__element {
+    flex: 0 0 100%;
+    overflow: hidden;
+  }
+
+  .news--1 {
+    background-position: 0px 0px;
+  }
+
+  .header-element--hamburger {
+    display: flex;
+  }
+
+  .search {
+    position: absolute;
+    top: 180px;
+    right: 20px;
+  }
+
+  .search__popup-container {
+    width: 230px;
+  }
+
+  .footer__navigation, .footer__form-element {
+    flex: 1 1 100%;
+  }
+
+  .footer__layout-2-columns {
+    justify-content: center;
+  }
+
+  .copyright {
+    flex: 0 1 80%;
+  }
+
+  .contacts__element {
+    flex: 1 1 100%;
+    margin: 15px 0px;
+  }
+
+  .layout-flex.message__layout-flex {
+    flex-wrap: wrap;
+  }
+
+
+  .details__element {
+    flex: 0 1 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .form__element {
+    flex: 0 1 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .message-icon {
+    display: block;
+    margin: 0px auto 10px;
+    top: 0rem;
+  }
+
+  .address, .email, .whatsapp {
+    text-align: center;
+  }
+  
+  .form__element {
+    flex: 0 1 100%;
+  }
+
+  .newsletter-form > input[type="submit"] {
+    flex: 1 1 100%;
+    margin: 15px 0px 0px 0px;
+  }
+
+  .transfer-form__text p, ul {
+    font-size: 1.4rem;
+  }
+
+  .order-transfer__item {
+    flex:1 1 100%;
+  }
+  
+  .transfer-form__contacts .email, .transfer-form__contacts .whatsapp {
+    display: block;
+    text-align: left;
+    font-size: 1.4rem;
+  }
+
+  .leather-article__contacts .email, .leather-article__contacts .whatsapp {
+    display: block;
+    text-align: left;
+    font-size: 1.4rem;
+  }
+
+  .slider__text, .slider__title {
+    display: none;
+  }
+
+  .video-block {
+    flex: 0 1 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .video-block.video-block--main {
+    flex: 0 1 100%;
+  }
+
+  .duran {
+    position: static;
+    width: 100%;
+    float: none;
+  }
+
+  .articles__wrapper, .events__wrapper {
+    width: 100%;
+    padding: 20px 35px;
+  }
+
+
+  .article__text-container {
+    flex: 0 1 50%;
+    padding-right: 0px;
+  }
+}
+
+
+@media all and (min-width: 768px)
+{
+  .menu-wrap {
+    display: none;
+  }
+}

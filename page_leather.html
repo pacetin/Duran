@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+  <title>Кожа</title>
+  <link rel="icon" href="/images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"/>  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="page_leather.css" type="text/css"/>
+  <link rel="stylesheet" href="header.css" type="text/css"/>
+  <link rel="stylesheet" href="footer.css" type="text/css"/>
+  <link rel="stylesheet" href="hamburger-menu.css">
+  <link rel="stylesheet" href="breadcrumb.css">
+  <link rel="stylesheet" href="social-media.css" type="text/css"/>
+  <link rel="stylesheet" href="max1024_layout.css" type="text/css"/>
+  <link rel="stylesheet" href="max767_layout.css" type="text/css"/>
+  <link rel="stylesheet" href="max414_layout.css" type="text/css"/>
+  <script src="script.js"></script>   
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper header__wrapper">
+      <a id="toTop"></a>
+      <div class="layout-flex header__layout-flex">
+        <h1 class="header__title">Все о Турции</h1>
+        <div class="social-media header__social-media">
+          <div class="social-media__icon">
+            <a href="https://www.facebook.com/tatyana.smirnova.1800" target="_blank">         
+              <svg>
+                <use xlink:href="sprite.svg#facebook"></use>
+              </svg>
+            </a>    
+          </div>
+          <div class="social-media__icon">
+            <a href="https://www.instagram.com/tanika_duran" target="_blank">         
+              <svg>
+                <use xlink:href="sprite.svg#instagram"></use>
+              </svg>
+            </a>   
+          </div>
+          <div class="social-media__icon">
+            <a href="https://vk.com/id2770897" target="_blank">         
+              <svg>
+                <use xlink:href="sprite.svg#vkontakte"></use>
+              </svg>
+            </a>   
+          </div>
+          <div class="social-media__icon">
+            <a href="https://www.youtube.com/channel/UCR0GTugHusGOOcX2rDH4jpA" target="_blank">         
+              <svg>
+                <use xlink:href="sprite.svg#youtube"></use>
+              </svg>
+            </a>  
+          </div>          
+        </div>
+      </div>
+
+      <!--         Лого, панель навигации, поиск       -->
+
+      <div class="layout-flex header__layout-flex">
+        <div class="logo-navigation-container">
+          <div class="logo header_logo">
+            <img class="logo-image" src="images/logo.gif" alt="Логотип компании">
+          </div>
+          <nav class="navigation">
+            <ul class="navigation-bar">
+              <li class="navigation-bar__item"><a href="home.html" target="_blank">Домашняя</a></li>
+              <li class="navigation-bar__item"><a href="page_video.html" target="_blank">Видео</a></li>
+              <li class="navigation-bar__item"><a href="page_transfer.html" target="_blank">Трансфер</a></li>
+              <li class="navigation-bar__item"><a href="#" target="_blank">Недвижимость</a></li>
+              <li class="navigation-bar__item navigation-bar__item--colored"><a href="page_leather.html" target="_blank">Кожа</a></li>
+              <li class="navigation-bar__item"><a href="contacts.html" target="_blank">Мои контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="menu-wrap">
+          <input type="checkbox" id="hmt" class="hidden-button">
+          <label class="menu-button" for="hmt">
+            <span class="first"></span>
+            <span class="second"></span>
+            <span class="third"></span>
+          </label>
+          <ul class="menu">
+            <li><a href="home.html" target="_blank">Домашняя</a></li>  
+            <li><a href="#" target="_blank">Видео</a></li>
+            <li><a href="page_transfer.html" target="_blank">Трансфер</a></li>
+            <li><a href="#" target="_blank">Недвижимость</a></li>
+            <li><a class="menu__item--colored" href="page_leather.html">Кожа</a></li>
+            <li><a href="contacts.html" target="_blank">Мои контакты</a></li>    
+          </ul>
+        </div>     
+        <div class="search">
+          <button type="button" class="search-button search-button--trigger" onclick="openSearch()">
+            <svg class="icon search__icon">
+              <use xlink:href="sprite.svg#search"></use>
+            </svg>
+          </button>          
+          <div class="search__popup-container"  id="popUp">          
+            <form class="search__form" action="php" method="get">
+              <input type="search" id="searchField" class="search-field" placeholder="Введите ключевое слово" />
+              <button type="submit" class="search-button search-button--submit">
+                <svg class="icon search__icon">              
+                  <use xlink:href="sprite.svg#search"></use>              
+                </svg>
+              </button>
+            </form>  
+            <button  type="button" class="search-button search-button--close" onclick="closeSearch()">
+              <svg class="icon search__icon search__icon--size--small">              
+                <use xlink:href="sprite.svg#close-cross"></use>              
+              </svg>
+            </button>
+          </div>                    
+        </div>
+      </div>  
+    </div>    
+  </header>
+
+ <!--         Хлебные крошки, слайдер, форма заказа     -->
+
+ <main>   
+    <div class="wrapper breadcrumb">
+      <ul class="breadcrumb-list">
+        <li><a href="home.html" target="_blank">Домашняя</a></li>
+        <li></li>
+        <li>Кожа</li>
+    </ul>
+    </div>
+
+    <section class="leather-slider">
+      <div class="wrapper leather-slider__wrapper">
+        <div class="leather-slider__title">
+          <h2>Мех, кожа и кожаные изделия в Анталии</h2>
+        </div>
+        <div class="slider">
+          <div class="slider-container">
+            <div class="slider__item">
+              <img src="images/page_leather/fur_red_lips.jpg" alt="девушка в шубе с красной помадой">          
+            </div>
+            <div class="slider__item">
+              <img src="images/page_leather/kozha-leather-texture-background-blue-zamsha.jpg" alt="синяя замша">
+            </div>
+            <div class="slider__item">
+              <img src="images/page_leather/kozha-leather-texture-background.jpg" alt="коричневая кожа">
+            </div>
+            <div class="slider__item">
+              <img src="images/page_leather/leatherbelts-wallets.jpg" alt="кожаные изделия">
+            </div>
+          </div>
+          <div class="slider__text-container">
+            <p class="slider__button">Трансфер на фабрики</p>
+            <p class="slider__text">Трансфер производится при поддержке фабрик производителей кожаных и меховых изделий.</p>
+            <p class="slider__title">Мы заберем вас из любой точки Анталии и отвезем на фабрики кожи и меха.</p>          
+          </div>
+        </div>   
+      </div>
+    </section>
+    <section class="leather-article">
+      <div class="wrapper leather-article__wrapper">
+        <div class="layout-flex leather-article__layout-flex">
+          <div class="leather-article__text">
+            <p>Турция привлекает туристов не только своими достопримечательностями, курортами и ласковым морем,
+            но и отличным и не дорогим шоппингом. Туристы из всех ближайших стран съезжаются, чтобы купить
+            качественные вещи, обувь, сумки и верхнюю одежду. Оптовики приезжают на фабрики в районе Зейтинбурну,
+            выбирают лучшие модели из самых последних коллекций и везут шубы, дубленки и куртки по своим магазинчикам
+            и бутикам в наши братские страны &mdash; Россия, Украина, Беларусь.</p>
+            <p>Почти все кожаные и меховые изделия в странах бывшего СНГ привезены из Турции и, сами понимаете,
+            у них хорошая наценка. Но сейчас и у вас появилась уникальная возможность посетить лучшие фабрики
+            Анталии в районе Зейтинбурну. Для этого просто закажите у нас бесплатный трансфер и вы сами сможете
+            посетить фабрики, и полюбоваться на шикарнейшие шубки из шиншиллы, норки, соболя, лисы и других видов
+            меха, чудесные дубленки и кожаные куртки.</p>
+            <p class="colored">Качество высшего класса</p>
+            <p>Если сравнить турецкие шубы и европейские, то по качеству они очень схожи, если мех имеет чисто
+            турецкое производство, а не китайские подделки. Чтобы быть полностью уверенным, нужно посетить именно
+            фабрики по производству кожи и меха в Анталии.</p>
+            <p>Вы побываете в прифабричных магазинах, шоурумах и на самих фабриках, своими глазами сможете увидеть,
+            потрогать и примерить самые очаровательные модели из последних коллекций турецких производителей шуб,
+            дубленок и кожаных курток. Вы сможете приобрести шубу или дубленку без наценок и накруток, практически
+            по себестоимости.</p>
+            <p class="colored">Трансфер, спонсируемый фабриками по изготовлению шуб и кожаных курток в Зейтинбурну,
+            для вас будет абсолютно бесплатным!</p>            	         
+          </div>
+          <div class="leather-article__contacts">
+            <span class="whatsapp">
+              <svg class="leather-icon">
+                <use xlink:href="sprite.svg#whatsapp"></use>
+              </svg>
+              <a class="leather-link" href="https://wa.me/79831225315" target="_blank">+7 983 122 5315</a>
+            </span>
+            <span class="email">
+              <svg class="leather-icon">
+                <use xlink:href="sprite.svg#email"></use>
+              </svg>
+              <a class="leather-link"  href="mailto:tanika.duran@yandex.ru" target="_blank">tanika.duran@yandex.ru</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+ <!--         Подвал, якорь      -->
+
+  <footer class="footer">
+  <div class="wrapper footer__wrapper">
+    <div class="layout-flex footer__layout-flex">
+      <div class="footer__about-me">
+        <h3 class="footer__title-item">обо мне</h3>
+        <p class="footer__text-item">Дорогие туристы и постоянные жители Турции, я очень рада приветствовать вас на моем сайте!<br>
+          Уже 12 лет как я работаю в сфере туризма и гостиничного бизнеса, была гидом, менеджером по
+          туризму, работала в офисе туроператора и в отеле. Поэтому очень хорошо понимаю, какие
+          вопросы у вас возникают на отдыхе и какая информация нужна. Здесь вы можете найти ссылки на
+          самые популярные мои видео с YouTube &mdash; канала, а также заказать трансфер, записаться на
+          консультацию по недвижимости в Анталии и забронировать выезд в магазин кожи. Я на связи с
+          вами в соцсетях и по почте.<br>
+          У вас есть вопрос &mdash; я помогу найти ответ. Отличного отдыха в
+          солнечной Турции!
+        </p>
+      </div>
+      <div class="footer__navigation">
+        <h3 class="footer__title-item footer__title-item--center">разделы</h3>
+        <ul class="footer__navigation-bar">
+          <li><a href="page_video.html" target="_blank">Видео</a></li>
+          <li><a href="page_transfer.html" target="_blank">Трансфер</a></li>
+          <li><a href="#" target="_blank">Недвижимость</a></li>
+          <li><a href="page_leather.html">Кожа</a></li>
+          <li><a href="#" target="_blank">Статьи</a></li>
+          <li><a href="contacts.html" target="_blank">Мои контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__form-element">
+        <h3 class="footer__title-item">есть вопрос?</h3>          
+        <a href="contacts.html#toForm" class="button-item footer__button-item" target="_blank">
+          <svg class="button-icon">
+            <use xlink:href="sprite.svg#paper-plane"></use>
+          </svg>
+        напиши мне</a>          
+        <h3 class="footer__title-item">следи за мной</h3>
+        <div class="social-media footer__social-media">
+          <div class="social-media__icon">
+            <a href="https://www.facebook.com/tatyana.smirnova.1800" target="_blank">         
+              <svg>
+                <use xlink:href="sprite.svg#facebook"></use>
+              </svg>
+            </a>    
+          </div>
+          <div class="social-media__icon">
+            <a href="https://www.instagram.com/tanika_duran" target="_blank">         
+              <svg>
+                <use xlink:href="sprite.svg#instagram"></use>
+              </svg>
+            </a>   
+          </div>
+          <div class="social-media__icon">
+            <a href="https://vk.com/id2770897" target="_blank">         
+              <svg>
+                <use xlink:href="sprite.svg#vkontakte"></use>
+              </svg>
+            </a>   
+          </div>
+          <div class="social-media__icon">
+            <a href="https://www.youtube.com/channel/UCR0GTugHusGOOcX2rDH4jpA" target="_blank">         
+              <svg>
+                <use xlink:href="sprite.svg#youtube"></use>
+              </svg>
+            </a>  
+          </div>          
+        </div>
+      </div>
+    </div>    
+    <div class="layout-flex footer__layout-2-columns">
+      <div class="splitter"></div>
+      <div class="logo footer__logo">
+        <img class="logo-image" src="images/logo.gif" alt="Логотип компании">
+      </div>
+      <div class="copyright">&#169; Татьяна Дуран, 2020. Любое использование либо копирование материалов или
+      подборки материалов сайта допускается лишь с разрешения правообладателя и только со ссылкой на источник.</div>
+    </div>
+  </div>
+  <div class="scroll-up">
+    <a href="#toTop">
+      <svg class="scroll-up__icon">
+        <use xlink:href="sprite.svg#chevron"></use>
+      </svg>
+    </a>
+  </div>
+  </footer>
+  <script src="svg4everybody.js"></script>
+  <script>svg4everybody();</script>
+</body>
+</html> 

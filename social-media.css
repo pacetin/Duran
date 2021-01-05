@@ -1,7 +1,7 @@
 .social-media__icon {
   display: inline-block;
   padding: 10px 11px;
-  border: solid white 1px;
+  border: solid transparent 1px;
   border-radius: 50%;
   background-color: transparent;
   margin-right: 20px;
@@ -24,6 +24,6 @@
   cursor: pointer;
 }
 .social-media__icon:hover svg {
-  stroke:  white;
-  fill: white;
+  stroke:  #fff;
+  fill: #fff;
 }

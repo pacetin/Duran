@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+  <title>Домашняя</title>
+  <link rel="icon" href="/images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"/>  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="home.css" type="text/css"/>
+  <link rel="stylesheet" href="header.css" type="text/css"/>
+  <link rel="stylesheet" href="footer.css" type="text/css"/>
+  <link rel="stylesheet" href="hamburger-menu.css">
+  <link rel="stylesheet" href="social-media.css" type="text/css"/>
+  <link rel="stylesheet" href="max1024_layout.css" type="text/css"/>
+  <link rel="stylesheet" href="max767_layout.css" type="text/css"/>
+  <link rel="stylesheet" href="max414_layout.css" type="text/css"/>
+  <script src="script.js"></script>
+</head>
+<body>  
+  <header class="header">
+    <div class="wrapper header__wrapper">
+      <a id="toTop"></a>
+      <div class="layout-flex header__layout-flex">
+        <h1 class="header__title">Все о Турции</h1>
+        <div class="social-media header__social-media">
+          <div class="social-media__icon">
+            <a href="https://www.facebook.com/tatyana.smirnova.1800" target="_blank">         
+              <svg>
+                <use xlink:href="sprite.svg#facebook"></use>
+              </svg>
+            </a>    
+          </div>
+          <div class="social-media__icon">
+            <a href="https://www.instagram.com/tanika_duran" target="_blank">         
+              <svg>
+                <use xlink:href="sprite.svg#instagram"></use>
+              </svg>
+            </a>   
+          </div>
+          <div class="social-media__icon">
+            <a href="https://vk.com/id2770897" target="_blank">         
+              <svg>
+                <use xlink:href="sprite.svg#vkontakte"></use>
+              </svg>
+            </a>   
+          </div>
+          <div class="social-media__icon">
+            <a href="https://www.youtube.com/channel/UCR0GTugHusGOOcX2rDH4jpA" target="_blank">         
+              <svg>
+                <use xlink:href="sprite.svg#youtube"></use>
+              </svg>
+            </a>  
+          </div>          
+        </div>
+      </div>
+
+      <!--         Лого, панель навигации, поиск       -->
+
+      <div class="layout-flex header__layout-flex">
+        <div class="logo-navigation-container">
+          <div class="logo header_logo">
+            <img class="logo-image" src="images/logo.gif" alt="Логотип компании">
+          </div>
+          <nav class="navigation">
+            <ul class="navigation-bar">
+              <li class="navigation-bar__item navigation-bar__item--colored"><a href="home.html">Домашняя</a></li>
+              <li class="navigation-bar__item"><a href="page_video.html" target="_blank">Видео</a></li>
+              <li class="navigation-bar__item"><a href="page_transfer.html" target="_blank">Трансфер</a></li>
+              <li class="navigation-bar__item"><a href="page_realestate.html" target="_blank">Недвижимость</a></li>
+              <li class="navigation-bar__item"><a href="page_leather.html" target="_blank">Кожа</a></li>
+              <li class="navigation-bar__item"><a href="contacts.html" target="_blank">Мои контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="menu-wrap">
+          <input type="checkbox" id="hmt" class="hidden-button">
+          <label class="menu-button" for="hmt">
+            <span class="first"></span>
+            <span class="second"></span>
+            <span class="third"></span>
+          </label>
+          <ul class="menu">
+            <li><a class="menu__item--colored" href="home.html">Домашняя</a></li>  
+            <li><a href="page_video.html" target="_blank">Видео</a></li>
+            <li><a href="page_transfer.html" target="_blank">Трансфер</a></li>
+            <li><a href="#" target="_blank">Недвижимость</a></li>
+            <li><a href="page_leather.html" target="_blank">Кожа</a></li>
+            <li><a href="contacts.html" target="_blank">Мои контакты</a></li>    
+          </ul>
+        </div>     
+        <div class="search">
+          <button type="button" class="search-button search-button--trigger" onclick="openSearch()">
+            <svg class="icon search__icon">
+              <use href="sprite.svg#search"></use>
+            </svg>
+          </button>          
+          <div class="search__popup-container"  id="popUp">          
+            <form class="search__form" action="php" method="get">
+              <input type="search" id="searchField" class="search-field" placeholder="Введите ключевое слово" />
+              <button type="submit" class="search-button search-button--submit">
+                <svg class="icon search__icon">              
+                  <use href="sprite.svg#search"></use>              
+                </svg>
+              </button>
+            </form>  
+            <button  type="button" class="search-button search-button--close" onclick="closeSearch()">
+              <svg class="icon search__icon search__icon--size--small">              
+                <use href="sprite.svg#close-cross"></use>              
+              </svg>
+            </button>
+          </div>                    
+        </div>
+      </div>  
+    </div>    
+  </header>
+ 
+
+ <main class="wrapper">
+    <section class="main-news">
+      <div class="container-2-columns">
+        <div class="container-2-columns__element1">
+          <div class="news news--1">
+            <div class="title-wrapper">
+              <a href="page_video.html" target="_blank" class="news__button">Подробнее</a>
+              <h2 class="news__title-item">YouTube канал Tatyana Duran</h2>
+            </div>
+          </div> 
+        </div>
+        <div class="container-2-columns__element2">
+          <div class="news news--2">
+            <div class="title-wrapper">
+              <a href="page_transfer.html" target="_blank" class="news__button">Подробнее</a>              
+              <h2 class="news__title-item">Заказ трансфера</h2>
+            </div>
+          </div>          
+          <div class="container-2-columns--inner">
+            <div class="container-2-columns--inner__element">
+              <div class="news news--3">
+                <div class="title-wrapper">
+                  <a href="#" target="_blank" class="news__button">Подробнее</a>
+                  <h2 class="news__title-item">Недвижимость в Анталии</h2>
+                </div>               
+              </div>
+            </div>
+            <div class="container-2-columns--inner__element">
+              <div class="news news--4">
+                <div class="title-wrapper">
+                  <a href="page_leather.html" target="_blank" class="news__button">Подробнее</a>                  
+                  <h2 class="news__title-item">Купить кожаные изделия</h2>
+                </div> 
+              </div>
+            </div>          
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="sticky-container">
+      <div class="duran">
+        <div class="duran__container">
+          <h3 class="title-item duran__title-item">Татьяна Дуран</h3>
+          <div class="duran__photo">
+            <img src="images/page_home/about_me.jpg" alt="фото Татьяны Дуран">
+          </div>
+          <p class="duran__text">Уже 12 лет как я работаю в сфере туризма и гостиничного бизнеса, была гидом, менеджером по
+            туризму, работала в офисе туроператора и в отеле. Поэтому очень хорошо понимаю, какие
+            вопросы у вас возникают на отдыхе и какая информация нужна. Здесь вы можете найти ссылки на
+            самые популярные мои видео с YouTube &mdash; канала, а также заказать трансфер, записаться на
+            консультацию по недвижимости в Анталии и забронировать выезд в магазин кожи. Я на связи с
+            вами в соцсетях и по почте.<br>
+            У вас есть вопрос &mdash; я помогу найти ответ. Отличного отдыха в
+            солнечной Турции!
+          </p>
+        </div>
+      </div>
+      <section class="events">
+        <div class="events__wrapper">
+          <h3 class="title-item events__title-item">события</h3>
+          <div class="layout-flex events__layout-flex">
+            <div class="event">
+              <div class="event__image-container">
+                <a class="link event__link" href="#">
+                  <img class="event__image" src="images/page_home/events_1.jpg" alt="шоппинг-молл в Анталии">
+                </a>
+              </div>
+              <div class="event__text-container">
+                <h4 class="event__title"><a class="link event__link" href="#">Открытие нового торгового центра</a></h4>
+                <time class="event__date" datetime="2019-04-26">Апрель, 2019</time>
+                <p class="event__text">Было анонсировано открытие нового торгового центра площадью 10 000 кв.м. Торговый
+                центр расположен в живописном месте, недалеко от нaбережной Коньяалты.</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="event__image-container">
+                <a class="link event__link" href="#">
+                  <img class="event__image" src="images/page_home/events_2.jpg" alt="узкая улица Калеичи">
+                </a>
+              </div>
+              <div class="event__text-container">
+                <h4 class="event__title"><a class="link event__link" href="#">Фестиваль народов мира</a></h4>
+                <time class="event__date" datetime="2019-04-26">Август, 2020</time>
+                <p class="event__text">Уже второй год подряд в Анталии будет проходить фестиваль народов и культур. 
+                В прошлом году были представители более 20 различных стран, которые продемонстрировали свои творческие
+                и кулинарные достижения.</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="event__image-container">
+                <a class="link event__link" href="#">
+                  <img class="event__image" src="images/page_home/events_3.jpg" alt="ночная набережная Коньяалты">
+                </a>
+              </div>
+              <div class="event__text-container">
+                <h4 class="event__title"><a class="link event__link" href="#">Вечерняя жизнь Коньяалты</a></h4>
+                <time class="event__date" datetime="2019-04-26">Июнь, 2020</time>
+                <p class="event__text">Как только спадает дневной зной, кафе и открытые террасы набережной
+                Коньяалты открывают двери для своих посетителей. Здесь можно выпить пару коктелей, поиграть
+                в ОК или нарды, послушать живую музыку и даже присоединиться к танцевальному сальса-марафону.</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="event__image-container">
+                <a class="link event__link" href="#">
+                  <img class="event__image" src="images/page_home/events_4.jpg" alt="ворота Адриана">
+                </a>
+              </div>
+              <div class="event__text-container">
+                <h4 class="event__title"><a class="link event__link" href="#">Что объединит всех мотоциклистов?</a></h4>
+                <time class="event__date" datetime="2019-04-26">Июнь, 2020</time>
+                <p class="event__text">Вы хотите увидеть вереницу байкеров, тогда присоединяйтесь к ежегодному заезду.
+                Заезд стартует от Ворот Адриана и до самого Дуденского водопада. Сотни байкеров под громкую музыку, сигналя
+                и поддерживая друга друга взбудоражат удивленных прохожих и точно заставят выглянуть в окно.</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="event__image-container">
+                <a class="link event__link" href="#">
+                  <img class="event__image" src="images/page_home/events_5.jpg" alt="турецкая еда">
+                </a>
+              </div>
+              <div class="event__text-container">
+                <h4 class="event__title"><a class="link event__link" href="#">Уличная еда набирает обороты</a></h4>
+                <time class="event__date" datetime="2019-04-26">Сентябрь, 2020</time>
+                <p class="event__text">Столько вкусного вы еще никогда не видели. А какой аромат?!
+                И все это собрано в одном месте. Буквально пройдя пару метров можно купить и первое и второе и десерт,
+                причем от лучших мастеров и поваров. А потом еще и поужинать, наблюдая какое-нибудь зажигательное шоу
+                на сцене.</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="event__image-container">
+                <a class="link event__link" href="#">
+                  <img class="event__image" src="images/page_home/events_6.jpg" alt="археологический музей Анталии">
+                </a>
+              </div>
+              <div class="event__text-container">
+                <h4 class="event__title"><a class="link event__link" href="#">В археологический музей &mdash; бесплатно</a></h4>
+                <p class="event__date">постоянно</p>
+                <p class="event__text">Во многих городах мира вводятся дни, когда можно посетить музей бесплатно. Анталия не
+                осталась в стороне тоже. Например, интереснейший археологический музей открывает свои двери для всех посетителей
+                в понедельник с 12 до 18 часов совершенно бесплатно.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="articles">
+        <div class="articles__wrapper">
+          <h3 class="title-item articles__title-item">статьи</h3>
+          <div class="layout-flex articles__layout-flex">
+            <div class="article">
+              <div class="article__image-container">
+                <a class="article__link" href="#">
+                  <img class="article__image" src="images/page_home/articles_1.jpg" alt="параглайдинг">
+                </a>
+              </div>
+              <div class="article__text-container">
+                <h4 class="article__title"><a href="#">Лучшее место для отдыха в октябре</a></h4>
+                <time class="article__date" datetime="2018-09-26T11:43:24+00:00">Сентябрь 26, 2018</time>
+              </div>
+            </div>
+            <div class="article">
+              <div class="article__image-container">
+                <a class="article__link" href="#">
+                  <img class="article__image" src="images/page_home/articles_2.jpg" alt="девичья башня">
+                </a>
+              </div>
+              <div class="article__text-container">
+                <h4 class="article__title"><a href="#">Легенда о Девичьей башне</a></h4>
+                <time class="article__date" datetime="2019-12-11">Декабрь 11, 2019</time>
+              </div>
+            </div>
+            <div class="article">
+              <div class="article__image-container">
+                <a class="article__link" href="#">
+                  <img class="article__image" src="images/page_home/articles_3.jpg" alt="рельеф Каппадокии">
+                </a>
+              </div>
+              <div class="article__text-container">
+                <h4 class="article__title"><a href="#">Долина, полная любовных символов</a></h4>
+                <time class="article__date" datetime="2019-02-14">Февраль 14, 2019</time>
+              </div>
+            </div>
+            <div class="article">
+              <div class="article__image-container">
+                <a class="article__link" href="#">
+                  <img class="article__image" src="images/page_home/articles_4.jpg" alt="пещеры Гереме">
+                </a>
+              </div>
+              <div class="article__text-container">
+                <h4 class="article__title"><a href="#">Христианство зародилось именно здесь</a></h4>
+                <time class="article__date" datetime="2019-03-08">Март 8, 2019</time>
+              </div>
+            </div>
+            <div class="article">
+              <div class="article__image-container">
+                <a class="article__link" href="#">
+                  <img class="article__image" src="images/page_home/articles_5.jpg" alt="голубая мечеть">
+                </a>
+              </div>
+              <div class="article__text-container">
+                <h4 class="article__title"><a href="#">Самые посещаемые места Стамбула</a></h4>
+                <time class="article__date" datetime="2019-04-30">Апрель 30, 2019</time>
+              </div>
+            </div>
+            <div class="article">
+              <div class="article__image-container">
+                <a class="article__link" href="#">
+                  <img class="article__image" src="images/page_home/articles_6.jpg" alt="третий аэропорт Стамбула">
+                </a>
+              </div>
+              <div class="article__text-container">
+                <h4 class="article__title"><a href="#">Самый крупный воздушный хаб</a></h4>
+                <time class="article__date" datetime="2019-08-31">Август 31, 2019</time>
+              </div>
+            </div>
+          </div>     
+        </div>
+      </section>      
+    </div>  
+  </main>  
+
+  <footer class="footer">
+    <div class="wrapper footer__wrapper">
+      <div class="layout-flex footer__layout-flex">
+        <div class="footer__about-me">
+          <h3 class="footer__title-item">обо мне</h3>
+          <p class="footer__text-item">Дорогие туристы и постоянные жители Турции, я очень рада приветствовать вас на моем сайте!<br>
+            Уже 12 лет как я работаю в сфере туризма и гостиничного бизнеса, была гидом, менеджером по
+            туризму, работала в офисе туроператора и в отеле. Поэтому очень хорошо понимаю, какие
+            вопросы у вас возникают на отдыхе и какая информация нужна. Здесь вы можете найти ссылки на
+            самые популярные мои видео с YouTube &mdash; канала, а также заказать трансфер, записаться на
+            консультацию по недвижимости в Анталии и забронировать выезд в магазин кожи. Я на связи с
+            вами в соцсетях и по почте.<br>
+            У вас есть вопрос &mdash; я помогу найти ответ. Отличного отдыха в
+            солнечной Турции!
+          </p>
+        </div>
+        <div class="footer__navigation">
+          <h3 class="footer__title-item footer__title-item--center">разделы</h3>
+          <ul class="footer__navigation-bar">
+            <li><a href="page_video.html">Видео</a></li>
+            <li><a href="page_transfer.html" target="_blank">Трансфер</a></li>
+            <li><a href="#" target="_blank">Недвижимость</a></li>
+            <li><a href="page_leather.html" target="_blank">Кожа</a></li>
+            <li><a href="#" target="_blank">Статьи</a></li>
+            <li><a href="contacts.html" target="_blank">Мои контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer__form-element">
+          <h3 class="footer__title-item">есть вопрос?</h3>          
+          <a href="contacts.html#toForm" class="button-item footer__button-item" target="_blank">
+            <svg class="button-icon">
+              <use xlink:href="sprite.svg#paper-plane"></use>
+            </svg>
+          напиши мне</a>          
+          <h3 class="footer__title-item">следи за мной</h3>
+          <div class="social-media footer__social-media">
+            <div class="social-media__icon">
+              <a href="https://www.facebook.com/tatyana.smirnova.1800" target="_blank">         
+                <svg>
+                  <use xlink:href="sprite.svg#facebook"></use>
+                </svg>
+              </a>    
+            </div>
+            <div class="social-media__icon">
+              <a href="https://www.instagram.com/tanika_duran" target="_blank">         
+                <svg>
+                  <use xlink:href="sprite.svg#instagram"></use>
+                </svg>
+              </a>   
+            </div>
+            <div class="social-media__icon">
+              <a href="https://vk.com/id2770897" target="_blank">         
+                <svg>
+                  <use xlink:href="sprite.svg#vkontakte"></use>
+                </svg>
+              </a>   
+            </div>
+            <div class="social-media__icon">
+              <a href="https://www.youtube.com/channel/UCR0GTugHusGOOcX2rDH4jpA" target="_blank">         
+                <svg>
+                  <use xlink:href="sprite.svg#youtube"></use>
+                </svg>
+              </a>  
+            </div>          
+          </div>
+        </div>
+      </div>    
+      <div class="layout-flex footer__layout-2-columns">
+        <div class="splitter"></div>
+        <div class="logo footer__logo">
+          <img class="logo-image" src="images/logo.gif" alt="Логотип компании">
+        </div>
+        <div class="copyright">&#169; Татьяна Дуран, 2020. Любое использование либо копирование материалов или
+        подборки материалов сайта допускается лишь с разрешения правообладателя и только со ссылкой на источник.</div>
+      </div>
+    </div>
+    <div class="scroll-up">
+      <a href="#toTop">
+        <svg class="scroll-up__icon">
+          <use xlink:href="sprite.svg#chevron"></use>
+        </svg>
+      </a>
+    </div>
+  </footer>
+  <script src="svg4everybody.js"></script>
+  <script>svg4everybody();</script>
+</body>
+</html>

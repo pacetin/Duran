@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+  <title>Трансфер</title>
+  <link rel="icon" href="/images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"/>  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="page_transfer.css" type="text/css"/>
+  <link rel="stylesheet" href="header.css" type="text/css"/>
+  <link rel="stylesheet" href="footer.css" type="text/css"/>
+  <link rel="stylesheet" href="hamburger-menu.css">
+  <link rel="stylesheet" href="breadcrumb.css">
+  <link rel="stylesheet" href="social-media.css" type="text/css"/>
+  <link rel="stylesheet" href="max1024_layout.css" type="text/css"/>
+  <link rel="stylesheet" href="max767_layout.css" type="text/css"/>
+  <link rel="stylesheet" href="max414_layout.css" type="text/css"/>
+  <script src="script.js"></script>  
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper header__wrapper">
+      <a id="toTop"></a>
+      <div class="layout-flex header__layout-flex">
+        <h1 class="header__title">Все о Турции</h1>
+        <div class="social-media header__social-media">
+          <div class="social-media__icon">
+            <a href="https://www.facebook.com/tatyana.smirnova.1800" target="_blank">         
+              <svg>
+                <use xlink:href="sprite.svg#facebook"></use>
+              </svg>
+            </a>    
+          </div>
+          <div class="social-media__icon">
+            <a href="https://www.instagram.com/tanika_duran" target="_blank">         
+              <svg>
+                <use xlink:href="sprite.svg#instagram"></use>
+              </svg>
+            </a>   
+          </div>
+          <div class="social-media__icon">
+            <a href="https://vk.com/id2770897" target="_blank">         
+              <svg>
+                <use xlink:href="sprite.svg#vkontakte"></use>
+              </svg>
+            </a>   
+          </div>
+          <div class="social-media__icon">
+            <a href="https://www.youtube.com/channel/UCR0GTugHusGOOcX2rDH4jpA" target="_blank">         
+              <svg>
+                <use xlink:href="sprite.svg#youtube"></use>
+              </svg>
+            </a>  
+          </div>          
+        </div>
+      </div>
+
+      <!--         Лого, панель навигации, поиск       -->
+
+      <div class="layout-flex header__layout-flex">
+        <div class="logo-navigation-container">
+          <div class="logo header_logo">
+            <img class="logo-image" src="images/logo.gif" alt="Логотип компании">
+          </div>
+          <nav class="navigation">
+            <ul class="navigation-bar">
+              <li class="navigation-bar__item"><a href="home.html" target="_blank">Домашняя</a></li>
+              <li class="navigation-bar__item"><a href="page_video.html" target="_blank">Видео</a></li>
+              <li class="navigation-bar__item navigation-bar__item--colored"><a href="page_transfer.html">Трансфер</a></li>
+              <li class="navigation-bar__item"><a href="page_realestate.html" target="_blank">Недвижимость</a></li>
+              <li class="navigation-bar__item"><a href="page_leather.html" target="_blank">Кожа</a></li>
+              <li class="navigation-bar__item"><a href="contacts.html" target="_blank">Мои контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="menu-wrap">
+          <input type="checkbox" id="hmt" class="hidden-button">
+          <label class="menu-button" for="hmt">
+            <span class="first"></span>
+            <span class="second"></span>
+            <span class="third"></span>
+          </label>
+          <ul class="menu">
+            <li><a href="home.html" target="_blank">Домашняя</a></li>  
+            <li><a href="page_video.html" target="_blank">Видео</a></li>
+            <li><a class="menu__item--colored" href="page_transfer.html">Трансфер</a></li>
+            <li><a href="#" target="_blank">Недвижимость</a></li>
+            <li><a href="page_leather.html" target="_blank">Кожа</a></li>
+            <li><a href="contacts.html" target="_blank">Мои контакты</a></li>    
+          </ul>
+        </div>     
+        <div class="search">
+          <button type="button" class="search-button search-button--trigger" onclick="openSearch()">
+            <svg class="icon search__icon">
+              <use href="sprite.svg#search"></use>
+            </svg>
+          </button>          
+          <div class="search__popup-container"  id="popUp">          
+            <form class="search__form" action="php" method="get">
+              <input type="search" id="searchField" class="search-field" placeholder="Введите ключевое слово" />
+              <button type="submit" class="search-button search-button--submit">
+                <svg class="icon search__icon">              
+                  <use href="sprite.svg#search"></use>              
+                </svg>
+              </button>
+            </form>  
+            <button  type="button" class="search-button search-button--close" onclick="closeSearch()">
+              <svg class="icon search__icon search__icon--size--small">              
+                <use href="sprite.svg#close-cross"></use>              
+              </svg>
+            </button>
+          </div>                    
+        </div>
+      </div>  
+    </div>    
+  </header>
+
+ <!--         Хлебные крошки, слайдер, форма заказа     -->
+
+ <main>   
+    <div class="wrapper breadcrumb">
+      <ul class="breadcrumb-list">
+        <li><a href="home.html" target="_blank">Домашняя</a></li>
+        <li></li>
+        <li>Трансфер</li>
+    </ul>
+    </div>
+
+    <section class="transfer-slider">
+      <div class="wrapper transfer-slider__wrapper">
+        <div class="transfer-slider__title">
+          <h2>Трансфер в Анталии</h2>
+        </div>
+        <div class="slider">
+          <img class="slider__item" src="images/page_transfer/vito-mercedes.jpg" alt="мерседес бенц вито черный">
+          <img class="slider__item" src="images/page_transfer/mercedes-benz-interior.jpg" alt="мерседес бенц вито салон">
+          <img class="slider__item" src="images/page_transfer/Mercedes_Benz_Vito_gray.jpg" alt="мерседес бенц вито серый">
+          <img class="slider__item" src="images/page_transfer/mercedes-benz-e-class_interior.jpg" alt="мерседес е-класса салон">
+          <img class="slider__item" src="images/page_transfer/lexus-is-350c-by-vip.jpg" alt="лексус розовый кабриолет">
+        </div>
+        <div class="slider-arrows">
+          <div class="arrows-container">
+            <a class="previous" onclick="minusSlide()">         
+              <svg class="arrow-icon">
+                <use xlink:href="sprite.svg#chevron"></use>
+              </svg>
+            </a>   
+          </div>
+          <div class="arrows-container">
+            <a class="next" onclick="plusSlide()">         
+              <svg class="arrow-icon arrow-icon--rotated">
+                <use xlink:href="sprite.svg#chevron"></use>
+              </svg>
+            </a>   
+          </div>
+        </div>
+        <div class="slider-dots">
+          <span class="slider-dots__item" onclick="currentSlide(1)"></span> 
+          <span class="slider-dots__item" onclick="currentSlide(2)"></span> 
+          <span class="slider-dots__item" onclick="currentSlide(3)"></span>
+          <span class="slider-dots__item" onclick="currentSlide(4)"></span>
+          <span class="slider-dots__item" onclick="currentSlide(5)"></span>          
+        </div>
+      </div>
+    </section>
+    <section class="transfer-form">
+      <div class="wrapper transfer-form__wrapper">
+        <div class="layout-flex transfer-form__layout-flex">
+          <div class="transfer-form__text">
+            <p>Не любите ждать общественный транспорт, стоять  в очереди на такси? Тогда вашим выбором может стать
+              бронирование трансфера из аэропорта Анталии или Алании.
+              Это один из самых быстрых и комфортных способов добраться из аэропорта в любом нужном вам направлении.
+              Вас встретят по прибытии, помогут с багажом и оперативно доставят к дверям отеля.
+            </p>
+            <p>Мы можем предложить своим клиентам не только классические услуги трансфера но и повышенный комфорт, а также услугу кабриолет сервис.</p>
+            <p> Трансфер в аэропорт возможен в двух вариантах:</p>
+            <ul class="transfer-form__list">
+              <li><strong>эконом класс:</strong> прямой частный трансфер, встреча в аэропорту с именной табличкой</li>
+              <li><strong>бизнес класс:</strong> прямой частный трансфер с одним из наших лимузинов, встреча в аэропорту с именной табличкой, прохладительные напитки</li>
+            </ul>
+            <p>В обоих классах мы предлагаем исключительное, своевременное и надежное обслуживание, которое гарантируется квалифицированными сотрудниками.</p>
+            <p>Приятного путешествия!</p>	         
+          </div>
+          <div class="transfer-form__form">
+            <h3 class="transfer-form__title">закажите наш трансфер</h3>
+            <form class="order-transfer" action="http://fe.it-academy.by/TestForm.php" target="_blank" method="post">
+              <div class="layout-flex">
+                <div class="order-transfer__item">
+                  <label for="city">Курорт&#42;</label>
+                  <input type="text" name="city" id="city" placeholder="Белек" required autofocus>
+                </div>
+                <div class="order-transfer__item">
+                  <label for="airport">Аэропорт&#42;</label>
+                  <select name="airport" id="airport" required size="1">
+                    <option value="" selected>Выберите вариант</option>
+                    <option value="antalya">Аэропорт Анталья</option>
+                    <option value="alanya">Аэропорт Газипаша</option>
+                    <option value="another">Другое</option>
+                  </select>
+                </div>
+                <div class="order-transfer__item">
+                  <label for="service">Сервис&#42;</label>
+                  <select name="service" id="service" required size="1">
+                    <option value="" selected>Выберите вариант</option>
+                    <option value="econom">Эконом Класс</option>
+                    <option value="business">Бизнес Класс</option>                  
+                  </select>
+                </div>
+                <div class="order-transfer__item">
+                  <label for="quantity">Количество человек&#42;</label>
+                  <select name="service" id="quantity" required size="1">
+                    <option value="" selected>Выберите вариант</option>
+                    <option value="1-3">1-3</option>
+                    <option value="4-6">4-6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>                  
+                  </select>
+                </div>
+                <div class="order-transfer__item order-transfer__item--full-size">
+                  <span class="radio-container">
+                    <input type="radio" name="tour" id="arrival" value="arrival" checked required>
+                    <label for="arrival">Прибытие</label>
+                  </span>
+                  <span class="radio-container">
+                    <input type="radio" name="tour" id="departure" value="departure" required>
+                    <label for="departure">Отъезд</label>
+                  </span>
+                  <span class="radio-container">
+                    <input type="radio" name="tour" id="arrival-departure" value="arrival-departure" required>
+                    <label for="arrival-departure">Прибытие и отъезд</label>
+                  </span>            
+                </div>
+                <div class="order-transfer__item order-transfer__item--full-size">
+                  <label for="mail">Оставьте Ваш e-mail для связи &#42;</label>
+                  <input type="email" name="mail" id="mail" placeholder="E-mail &#42;" required>
+                </div>
+                <div class="order-transfer__item order-transfer__item--full-size">
+                  <input class="button-item order-transfer__button-item" type="submit" value="отправить">
+                </div>
+              </div>
+            </form>
+            <div class="transfer-form__contacts">
+              <span class="whatsapp">
+                <svg class="transfer-icon">
+                  <use xlink:href="sprite.svg#whatsapp"></use>
+                </svg>
+                <a class="transfer-link" href="https://wa.me/79831225315" target="_blank">+7 983 122 5315</a>
+              </span>
+              <span class="email">
+                <svg class="transfer-icon">
+                  <use xlink:href="sprite.svg#email"></use>
+                </svg>
+                <a class="transfer-link"  href="mailto:tanika.duran@yandex.ru" target="_blank">tanika.duran@yandex.ru</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+ <!--         Подвал, якорь      -->
+
+  <footer class="footer">
+  <div class="wrapper footer__wrapper">
+    <div class="layout-flex footer__layout-flex">
+      <div class="footer__about-me">
+        <h3 class="footer__title-item">обо мне</h3>
+        <p class="footer__text-item">Дорогие туристы и постоянные жители Турции, я очень рада приветствовать вас на моем сайте!<br>
+          Уже 12 лет как я работаю в сфере туризма и гостиничного бизнеса, была гидом, менеджером по
+          туризму, работала в офисе туроператора и в отеле. Поэтому очень хорошо понимаю, какие
+          вопросы у вас возникают на отдыхе и какая информация нужна. Здесь вы можете найти ссылки на
+          самые популярные мои видео с YouTube &mdash; канала, а также заказать трансфер, записаться на
+          консультацию по недвижимости в Анталии и забронировать выезд в магазин кожи. Я на связи с
+          вами в соцсетях и по почте.<br>
+          У вас есть вопрос &mdash; я помогу найти ответ. Отличного отдыха в
+          солнечной Турции!
+        </p>
+      </div>
+      <div class="footer__navigation">
+        <h3 class="footer__title-item footer__title-item--center">разделы</h3>
+        <ul class="footer__navigation-bar">
+          <li><a href="page_video.html" target="_blank">Видео</a></li>
+          <li><a href="page_transfer.html">Трансфер</a></li>
+          <li><a href="#" target="_blank">Недвижимость</a></li>
+          <li><a href="page_leather.html" target="_blank">Кожа</a></li>
+          <li><a href="#" target="_blank">Статьи</a></li>
+          <li><a href="contacts.html" target="_blank">Мои контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__form-element">
+        <h3 class="footer__title-item">есть вопрос?</h3>          
+        <a href="contacts.html#toForm" class="button-item footer__button-item" target="_blank">
+          <svg class="button-icon">
+            <use xlink:href="sprite.svg#paper-plane"></use>
+          </svg>
+        напиши мне</a>          
+        <h3 class="footer__title-item">следи за мной</h3>
+        <div class="social-media footer__social-media">
+          <div class="social-media__icon">
+            <a href="https://www.facebook.com/tatyana.smirnova.1800" target="_blank">         
+              <svg>
+                <use xlink:href="sprite.svg#facebook"></use>
+              </svg>
+            </a>    
+          </div>
+          <div class="social-media__icon">
+            <a href="https://www.instagram.com/tanika_duran" target="_blank">         
+              <svg>
+                <use xlink:href="sprite.svg#instagram"></use>
+              </svg>
+            </a>   
+          </div>
+          <div class="social-media__icon">
+            <a href="https://vk.com/id2770897" target="_blank">         
+              <svg>
+                <use xlink:href="sprite.svg#vkontakte"></use>
+              </svg>
+            </a>   
+          </div>
+          <div class="social-media__icon">
+            <a href="https://www.youtube.com/channel/UCR0GTugHusGOOcX2rDH4jpA" target="_blank">         
+              <svg>
+                <use xlink:href="sprite.svg#youtube"></use>
+              </svg>
+            </a>  
+          </div>          
+        </div>
+      </div>
+    </div>    
+    <div class="layout-flex footer__layout-2-columns">
+      <div class="splitter"></div>
+      <div class="logo footer__logo">
+        <img class="logo-image" src="images/logo.gif" alt="Логотип компании">
+      </div>
+      <div class="copyright">&#169; Татьяна Дуран, 2020. Любое использование либо копирование материалов или
+      подборки материалов сайта допускается лишь с разрешения правообладателя и только со ссылкой на источник.</div>
+    </div>
+  </div>
+  <div class="scroll-up">
+    <a href="#toTop">
+      <svg class="scroll-up__icon">
+        <use xlink:href="sprite.svg#chevron"></use>
+      </svg>
+    </a>
+  </div>
+  </footer>
+  <script src="svg4everybody.js"></script>
+  <script>svg4everybody();</script>
+</body>
+</html> 
